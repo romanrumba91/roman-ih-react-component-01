@@ -1,23 +1,13 @@
 // 1. IMPORTACIONES
-import logo from './logo.svg';
+
 import './App.css';
-import Header from './Header'
-import Footer from './Footer'
+import Footer from './components/Layout/Footer';
+import Header from './components/Layout/Header';
+import Main from './components/Main/Main';
+
 
 
 // 2. FUNCIÓN (COMPONENTE)
-
-// function suma(a,b) {
-  
-//   // ... sentencias, instrucciones par apoder retornar correctamente un resultado
-//   const numA = parseInt(a)
-//   const numB = parseInt(b)
-  
-//   return numA + numB
-// }
-
-// suma(1,2)
-
 
 function App() {
 
@@ -28,7 +18,7 @@ function App() {
   return ( 
     <div className="App">
       <Header nombre={name} />
-      <Footer nombre={name} />
+      <Main />
     </div>
   );
 }
